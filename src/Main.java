@@ -41,17 +41,17 @@ void main() {
     int money = 29000;
     int total = 0;
     for (int i = 1; i < 13; i++) {
-        total = total + money;
+        total += money;
         System.out.println("Месяц " + i + ", сумма накоплений равна " + total + " рублей");
     }
     // Task9
     System.out.println("    Task_9:");
     int deposit = 29000;
-    int interest = 0;
+    int saving = 0;
     for (int i = 1; i < 13; i++) {
-        interest = interest + interest / 100;
-        interest = interest + deposit;
-        System.out.println("Месяц " + i + ", сумма накоплений равна " + interest + " рублей");
+        saving += deposit;
+        saving += saving * 0.01;
+        System.out.println("Месяц " + i + ", сумма накоплений равна " + saving + " рублей");
     }
     // Task10
     System.out.println("    Task_10:");
